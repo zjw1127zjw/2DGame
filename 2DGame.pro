@@ -9,9 +9,28 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    AttackEffect.cpp \
+    BallProjectile.cpp \
+    Bullet.cpp \
+    Character.cpp \
+    GameOverScreen.cpp \
+    GameScreen.cpp \
+    HelpScreen.cpp \
+    Item.cpp \
+    KnifeAttackEffect.cpp \
     main.cpp
 
-HEADERS +=
+HEADERS += \
+    AttackEffect.h \
+    BallProjectile.h \
+    Bullet.h \
+    Character.h \
+    GameOverScreen.h \
+    GameScreen.h \
+    HelpScreen.h \
+    Item.h \
+    KnifeAttackEffect.h \
+    Platform.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
